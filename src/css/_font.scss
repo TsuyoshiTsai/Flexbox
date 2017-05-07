@@ -1,0 +1,5 @@
+@each $name in $box-size-names {
+  .font-size--#{$name} {
+    font-size: font-size($name);
+  }
+}

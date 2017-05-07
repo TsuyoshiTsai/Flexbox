@@ -1,0 +1,27 @@
+.box {
+  padding: .625rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px hsla(0, 0%, 0%, .25);
+}
+@for $i from 0 through 11 {
+  .box--color#{$i + 1} {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(30 * $i, 55%, 70%);
+  }
+}
+@each $name in $box-size-names {
+  $box-size: box-size($name);
+
+  .box--#{$name} {
+    width: $box-size * 5;
+    height: $box-size * 5;
+  }
+
+  .box-height--#{$name} {
+    height: $box-size;
+  }
+}
+
+.box-width--1by3 {
+  width: 33.33%;
+}

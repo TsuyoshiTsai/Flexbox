@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {    
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node ./build/server.js",
     "deploy": "cross-env NODE_ENV=production webpack --config ./build/webpack.config.prod.js --progress --color"
@@ -39,6 +39,9 @@
     "webpack-dev-server": "^2.3.0"
   },
   "dependencies": {
-    "normalize.css": "^5.0.0"
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.2.1",
+    "normalize.css": "^5.0.0",
+    "tether": "^1.4.0"
   }
 }

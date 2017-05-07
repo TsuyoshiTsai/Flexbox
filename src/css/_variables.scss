@@ -1,0 +1,23 @@
+$box-size-names: xs, sm, md, lg, xl;
+
+$box-sizes: (
+    xs: 2.5rem,
+    sm: 5rem,
+    md: 7.5rem,
+    lg: 10rem,
+    xl: 12.5rem
+);
+@function box-size($name) {
+  @return map-get($box-sizes, $name);
+}
+
+$font-sizes: (
+    xs: .75rem,
+    sm: 1.25rem,
+    md: 1.75rem,
+    lg: 2.25rem,
+    xl: 2.5rem
+);
+@function font-size($name) {
+  @return map-get($font-sizes, $name);
+}

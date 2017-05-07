@@ -57,6 +57,14 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.ProvidePlugin({
+            '$': 'jquery',
+            'jQuery': 'jquery',
+            'window.jQuery': 'jquery',
+            'tether': 'tether',
+            'Tether': 'tether',
+            'window.Tether': 'tether',
+        }),
         new ExtractTextPlugin({
             filename: 'css/[name]-[contenthash].css',
             disable: false,

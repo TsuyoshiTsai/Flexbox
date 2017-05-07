@@ -1,0 +1,32 @@
+.property {
+  margin: 1.875rem 0;
+}
+
+.property__title {
+  margin: 0;
+}
+
+.property__subtitle {
+  color: hsl(0, 0%, 40%);
+}
+
+.value {
+  margin: 1.25rem 0;
+  padding: .9325rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 2px 3px hsla(0, 0%, 0%, .1);
+}
+
+.value__title {
+  margin: 0;
+  margin-bottom: .625rem;
+  color: hsl(0, 0%, 26.5%);
+}
+
+.value__subtitle {
+  margin: .625rem 0;
+}
+
+.value__container {
+  padding: .9325rem;
+}
