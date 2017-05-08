@@ -185,3 +185,41 @@
 .align-self--stretch {
   align-self: stretch;
 }
+
+// grow
+@for $i from 1 through 5 {
+  .grow--#{$i} {
+    flex-grow: $i;
+  }
+}
+
+// shrink
+@for $i from 2 through 6 {
+  .shrink--#{$i} {
+    flex-shrink: $i;
+  }
+}
+
+// basis
+$min-basis: 1;
+$max-basis: 5;
+$total-basis: ($min-basis + $max-basis) * $max-basis / 2;
+@for $i from $min-basis through $max-basis {
+  .basis--#{$i}by#{$total-basis} {
+    flex-basis: 100% * $i / $total-basis;
+  }
+}
+
+// flex
+$flex-basises: 25, 50;
+@for $i from 1 through 3 {
+   @each $basis in $flex-basises{
+    .flex--#{$i}_1_#{$basis} {
+      flex: $i 1 ($basis / 100 * 100%);
+    }
+
+    .flex--1_#{$i}_#{$basis} {
+      flex: 1 $i ($basis / 100 * 100%);
+    }
+  }
+}

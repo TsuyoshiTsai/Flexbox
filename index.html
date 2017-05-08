@@ -850,6 +850,123 @@
                 </section>
                 <!-- property align-self -->
 
+                <section class="property">
+                    <h1 class="property__title">flex-grow</h1>
+                    <small class="property__subtitle">Flex Item</small>
+                    <div class="value">
+                        <h2 class="value__title">&lt;number&gt;</h2>
+                        <div class="value_container">
+                            <div class="display--flex box box--color1">
+                                <div class="box box--color3 grow--1 font-size--xs">item1<br/>flex-grow: 1;</div>
+                                <div class="box box--color4 grow--2 font-size--xs">item2<br/>flex-grow: 2;</div>
+                                <div class="box box--color5 grow--3 font-size--xs">item3<br/>flex-grow: 3;</div>
+                                <div class="box box--color6 grow--4 font-size--xs">item4<br/>flex-grow: 4;</div>
+                                <div class="box box--color7 grow--5 font-size--xs">item5<br/>flex-grow: 5;</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- property flex-grow -->
+
+                <section class="property">
+                    <h1 class="property__title">flex-shrink</h1>
+                    <small class="property__subtitle">Flex Item</small>
+                    <div class="value">
+                        <h2 class="value__title">&lt;number&gt;</h2>
+                        <div class="value_container">
+                            <div class="display--flex box box--color1">
+                                <div class="box box--color3 shrink--2 box-width--1by3 font-size--xs">item1<br/>flex-shrink: 2;</div>
+                                <div class="box box--color4 shrink--3 box-width--1by3 font-size--xs">item2<br/>flex-shrink: 3;</div>
+                                <div class="box box--color5 shrink--4 box-width--1by3 font-size--xs">item3<br/>flex-shrink: 4;</div>
+                                <div class="box box--color6 shrink--5 box-width--1by3 font-size--xs">item4<br/>flex-shrink: 5;</div>
+                                <div class="box box--color7 shrink--6 box-width--1by3 font-size--xs">item5<br/>flex-shrink: 6;</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- property flex-shrink -->
+
+                <section class="property">
+                    <h1 class="property__title">flex-basis</h1>
+                    <small class="property__subtitle">Flex Item</small>
+                    <div class="value">
+                        <h2 class="value__title">&lt;length&gt; | auto;</h2>
+                        <div class="value_container">
+                            <div class="display--flex box box--color1">
+                                <div class="box box--color3 basis--1by15 font-size--xs">item1<br/>1 / 15</div>
+                                <div class="box box--color4 basis--2by15 font-size--xs">item2<br/>2 / 15</div>
+                                <div class="box box--color5 basis--3by15 font-size--xs">item3<br/>3 / 15</div>
+                                <div class="box box--color6 basis--4by15 font-size--xs">item4<br/>4 / 15</div>
+                                <div class="box box--color7 basis--5by15 font-size--xs">item5<br/>5 / 15</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- property flex-basis -->
+
+                <section class="property">
+                    <h1 class="property__title">flex</h1>
+                    <small class="property__subtitle">Flex Item / Mixin by flex-grow, flex-shrink and flex-basis</small>
+                    <br/>
+                    <code>
+                        <small class="property__subtitle">flex: &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; | none</small>
+                    </code>
+
+                    <div class="value container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="value__subtitle">flex: 1 1 25% | 2 1 25% | 3 1 25%;</h4>
+                                <div class="value_container">
+                                    <div class="display--flex box box--color1">
+                                        <div class="box box--color3 flex--1_1_25 font-size--xs">item1<br/>flex: 1 1 25%;</div>
+                                        <div class="box box--color4 flex--1_2_25 font-size--xs">item2<br/>flex: 1 2 25%;</div>
+                                        <div class="box box--color5 flex--1_3_25 font-size--xs">item3<br/>flex: 1 3 25%;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="value__subtitle">flex: 1 1 50% | 1 2 50% | 1 3 50%;</h4>
+                                <div class="value_container">
+                                    <div class="display--flex box box--color1">
+                                        <div class="box box--color3 flex--1_1_50 font-size--xs">item1<br/>flex: 1 1 50%;</div>
+                                        <div class="box box--color4 flex--1_2_50 font-size--xs">item2<br/>flex: 1 2 50%;</div>
+                                        <div class="box box--color5 flex--1_3_50 font-size--xs">item3<br/>flex: 1 3 50%;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- flex fixed grow -->
+
+                    <div class="value container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="value__subtitle">flex: 1 1 25% | 2 1 25% | 3 1 25%;</h4>
+                                <div class="value_container">
+                                    <div class="display--flex box box--color1">
+                                        <div class="box box--color3 flex--1_1_25 font-size--xs">item1<br/>flex: 1 1 25%;</div>
+                                        <div class="box box--color4 flex--2_1_25 font-size--xs">item2<br/>flex: 2 1 25%;</div>
+                                        <div class="box box--color5 flex--3_1_25 font-size--xs">item3<br/>flex: 3 1 25%;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="value__subtitle">flex: 1 1 50% | 2 1 50% | 3 1 50%;</h4>
+                                <div class="value_container">
+                                    <div class="display--flex box box--color1">
+                                        <div class="box box--color3 flex--1_1_50 font-size--xs">item1<br/>flex: 1 1 50%;</div>
+                                        <div class="box box--color4 flex--2_1_50 font-size--xs">item2<br/>flex: 2 1 50%;</div>
+                                        <div class="box box--color5 flex--3_1_50 font-size--xs">item3<br/>flex: 3 1 50%;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- flex fixed shrink -->
+
+                </section>
+                <!-- property flex -->
+
             </div>
             <div class="col-md-2">
 
