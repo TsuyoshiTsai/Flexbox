@@ -1,17 +1,43 @@
 .property {
-  margin: 1.875rem 0;
+  margin: 2.5rem 0;
 }
 
 .property__title {
   margin: 0;
 }
 
-.property__subtitle {
+.property__title-link {
+  color: currentColor;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.property__summary {
   color: hsl(0, 0%, 40%);
 }
 
+.property__usage {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.usage__title {
+  color: hsl(0, 0%, 40%);
+}
+
+.usage__syntax {
+  padding: .125rem .25rem;
+  border-radius: .25rem;
+  font-size: .875rem;
+  color: hsl(345,69%,46%);
+  background-color: hsl(343, 42%, 92%);
+}
+
 .value {
-  margin: 1.25rem 0;
+  margin: .9375rem 0;
   padding: .9325rem;
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0 2px 3px hsla(0, 0%, 0%, .1);
