@@ -95,11 +95,11 @@ module.exports = {
             name: 'manifest',
             chunks: ['vendor']
         }),
-        // new webpack.optimize.UglifyJsPlugin({
-        //     compress: {
-        //         warnings: false
-        //     }
-        // }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        }),
         new CleanWebpackPlugin(['dist'], {
             root: path.resolve(__dirname, '..')
         }),
