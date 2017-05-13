@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
 @each $name in $box-size-names {
   .font-size--#{$name} {
     font-size: font-size($name);
